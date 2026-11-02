@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class=".container">
+       <nav>
+            <img src="images/logo4.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="showMenu()"></i>  
+       </nav>
+       <div class="header-text">
+             <p>AI ML Engineer</p>
+            <h1>I am<span> VIDHYADHAR CHITTIMALLA</span></h1>
+       </div>
+    </div>
+</div>
+<!-------------------------------------------------------------- About ------------------------------------------------------>
+<div id="about">
+    <div class=".container">
+        <div class="row">
+            <div class="about-column-1">
+                <img src="images/background6.png" >
+            </div>
+                    <div class="about-column-2">
+                        <h1 class="sub-title">About Me</h1>
+                            <p class="sub-t">Driven by curiosity and a bias toward building, I view problem-solving as an iterative craft whether dissecting complex algorithmic challenges or exploring visual design. I value structured thinking, attention to detail, and the discipline it takes to turn abstract ideas into functional, polished reality.</p>
+                            <p class="sub-t">Outside technical development, I am energized by collaborative environments where multidisciplinary perspectives collide, from team hackathons to cross-functional initiatives. I approach new domains with an active learning mindset, adaptable communication, and a steady focus on creating meaningful real-world impact.</p>
+                                    <div class="tab-titles">
+                                        <p class="tab-links active-link" onclick="opentab('skills',this)">Skills</p>
+                                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>C, C++, Python</li>
+                                <li><span>Computer Networking</span><br>Computer Software, Computer Hardware</li>
+                                <li><span>Full Stack Development</span><br>Web Development, Frontend</li>
+                            </ul>
+        </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2025-current</span><br>CSE(AI&ML) at Marwadi University</li>
+                    <li><span>2023-2025</span><br>Intermediate at Narayana College</li>
+                    <li><span>2023</span><br>10th Grade at Ekashila High School</li>
+                </ul>
+                    </div>
+                </div>
+
+            </div>
+           
+        </div>
+</div>
+
+
+<!-------------------------------------------------------services------------------------------------------->
+
+
+<div class="services" id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <a href="#" class="service-card">
+                <h2><span>Web Design</span></h2>
+                <p>Web development is the process of building, creating, and maintaining websites or web applications that run over the internet. It spans everything from formatting simple, text-based static pages to engineering highly interactive, complex digital platforms like social networks, online stores, and productivity software.</p>
+            </a>
+            <a href="#" class="service-card">
+                <h2><span>UI/UX Design </span></h2>
+                <p>Web development is the process of building, creating, and maintaining websites or web applications that run over the internet. It spans everything from formatting simple, text-based static pages to engineering highly interactive, complex digital platforms like social networks, online stores, and productivity software.</p>
+            </a>
+            <a href="#" class="service-card">
+                <h2><span>AI & ML Engineer</span></h2>
+                <p>An AI and Machine Learning (ML) Engineer bridges the gap between data science research and production software engineering. They build, test, optimize, and deploy intelligent systems that learn from data or power modern applications.</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-----------------------------portfolio-------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work.png">
+                <div class="layer">
+                    <h3>Expence Calculator</h3>
+                    <p>The app which hold back the expences and notable customizable.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work.png">
+                <div class="layer">
+                    <h3>AI Tutor</h3>
+                    <p>The website which explains the topics on specified concepts.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work.png">
+                <div class="layer">
+                    <h3>Online Food Ordering App</h3>
+                    <p>This application will be easy to order and customizable.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!----------------------contact------------------>
+<div id="contact">
+    <div class=".container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-envelope"></i> chittimallavidhyadhar@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 9014390982</p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/vidhyadhar-chittimalla-6822a6388/" target="_blank"  aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/vidhyadhar07" target="_blank" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="download-cv">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder= "Your Name" required>
+                    <input type="email" name ="email" placeholder=" Your Email" required>
+                    <textarea name="Message" rows="6" placeholder= "Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>copyright © VIDHYADHAR.  Made with<i> I  <span> &hearts;</span> coding!</i> </p>
+    </div>
+</div>
+
+
+
+<script>
+    var sideMenu = document.querySelector("nav ul");
+
+    function showMenu(){
+        sideMenu.classList.add("open");
+    }
+
+    function closeMenu(){
+        sideMenu.classList.remove("open");
+    }
+
+    document.querySelectorAll("nav ul li a").forEach(function(link){
+        link.addEventListener("click", function(event){
+            var sectionId = link.getAttribute("href").substring(1);
+            var section = document.getElementById(sectionId);
+
+            if(section){
+                event.preventDefault();
+                closeMenu();
+                window.setTimeout(function(){
+                    window.scrollTo({
+                        top: section.offsetTop,
+                        behavior: "smooth"
+                    });
+                    window.history.replaceState(null, "", "#" + sectionId);
+                }, 300);
+            }
+        });
+    });
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+    }
+      event.currentTarget.classList.add("active-link");
+        
+       
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+
+</script>
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyN_-HdaMYZE3yM1MdFZEkKdPMRTWC34Bt9_ano9xX4d7rS3DieyDnrP94He5CTZBvsaA/exec'
+const form = document. forms ['submit-to-google-sheet' ]
+const msg = document.getElementById("msg")
+form.addEventListener('submit', e => {
+e.preventDefault()
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+. then(response => {
+    
+    msg.innerHTML = "Message Sent Successfully"
+    setTimeout(function(){
+        msg.innerHTML = ""
+    }, 5000)
+    form.reset()
+})
+.catch(error => console.error('Error!', error.message))
+
+})
+</script>
+</body>
+</html>
